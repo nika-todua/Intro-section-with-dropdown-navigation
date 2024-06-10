@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
-
     let features = document.querySelector(".features-dropdown");
     let featuresIMG = document.querySelector(".features-dropdown img");
     let featureDropdoownmenu = document.querySelector(".featureDropdoownmenu");
@@ -9,10 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     features.addEventListener("click", function () {
         featuresCount++
-
         
         if (companyDropdoownmenu.className === "font companyDropdoownmenu active") {
-            console.log(companyDropdoownmenu.className);
             companyDropdoownmenu.classList.remove("active");
             company.classList.remove("features-dropdown-active");
             companyIMG.src = 'images/icon-arrow-down.svg';
